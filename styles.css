@@ -305,3 +305,11 @@ margin: 20px;
     width: 150px;
     height: 150px;
 }
+
+footer a {
+    text-decoration: overline;
+    color: #000000;
+}
+footer p {
+    color: #000000;
+}
