@@ -1,0 +1,307 @@
+/* Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Header */
+header {
+    background-color: hsl(0, 0%, 0%);
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+    background-color: #053d1b;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0;
+}
+
+/* Main */
+main {
+    padding: 2rem;
+    background: linear-gradient(135deg, #67997c, #03b66b); 
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.producto {
+    border: 1px solid #000000;
+    padding: 1rem;
+    flex: 1 1 200px;
+}
+
+/* Formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #478105;
+    color: #fff;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 2rem;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Reinicio básico de márgenes y relleno para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sección de Productos */
+#productos {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Contenedor de las tarjetas de productos */
+.productos {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos de cada tarjeta de producto */
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+    /* Ajuste para tres columnas */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Imagen del producto */
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Título del producto */
+.producto h3 {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/* Precio del producto */
+.producto .precio {
+    color: #8c614d;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+/* Descripción del producto */
+.producto .descripcion {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .producto {
+        width: calc(50% - 1rem);
+        /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        width: 100%;
+        /* Una columna en pantallas pequeñas */
+    }
+}
+
+/* FROM TOP LEFT TO BOTTOM RIGHT */
+@keyframes bgshift {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* SET GRADIENT BACKGROUND */
+#demoE {
+    background: linear-gradient(90deg, #312f2d00 0%, #000000 50%, #00000000 100%);
+    background-size: 200% 200%;
+    animation: bgshift 10s infinite alternate;
+    padding: 2rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 2rem;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ddd;
+}
+
+/* Sección de Vendedores */
+#vendedores {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Contenedor de las tarjetas de vendedores */
+.vendedores {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos de cada tarjeta de vendedor */
+.vendedor {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+    /* Tres columnas */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Foto del vendedor */
+/* Foto del vendedor */
+.vendedor img {
+    width: 150px;
+    /* Ajusta el tamaño según tus preferencias */
+    height: 150px;
+    /* Igual que el ancho para hacerla circular */
+    border-radius: 50%;
+    /* Hace la imagen circular */
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste sin distorsión */
+    margin-bottom: 1rem;
+}
+
+
+/* Nombre del vendedor */
+.vendedor h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+/* Especialidad y Experiencia */
+.vendedor .especialidad {
+    font-weight: bold;
+    color: #8c614d;
+}
+
+.vendedor .experiencia {
+    color: #555;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+/* Descripción del vendedor */
+.vendedor .descripcion {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .vendedor {
+        width: calc(50% - 1rem);
+        /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .vendedor {
+        width: 100%;
+        /* Una columna en pantallas pequeñas */
+    }
+}
+
+
+/* Sombra para todas las tarjetas */
+.producto,
+.vendedor {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* Ajusta el color y la opacidad según el efecto deseado */
+    transition: box-shadow 0.3s ease;
+    /* Transición suave para efectos al pasar el cursor */
+}
+
+/* Efecto de sombra al pasar el cursor */
+.producto:hover,
+.vendedor:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+.contactanos {
+    text-align: center;
+}
+.productosvendedores{
+margin: 20px;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+}
